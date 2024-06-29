@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 
 def get_token():
-    token = Non
+    token = None
     with open(nombre_archivo, 'r') as archivo:
         for linea in archivo:
             linea = linea.strip()  # Eliminar espacios en blanco al principio y al final
