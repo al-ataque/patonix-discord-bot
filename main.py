@@ -5,7 +5,8 @@ def get_token():
     token = None
     with open(".env", 'r') as archivo:
         for linea in archivo:
-            linea = linea.strip()  # Eliminar espacios en blanco al principio y al final
+            print(linea)
+            token = linea.strip()  # Eliminar espacios en blanco al principio y al final
             return token
 
 TOKEN = get_token()
